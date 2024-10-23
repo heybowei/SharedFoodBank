@@ -1,0 +1,28 @@
+
+
+
+.level1 {
+    margin: auto;
+  
+  
+  
+  .toolbar {
+    vertical-align: middle;
+    margin: auto;
+    .img{
+        margin-left: 10%;
+        .icon{
+            margin-top: 5px;
+            margin-left: 5%;
+        }
+      }
+
+    .slogen{
+        margin: auto;
+    }
+    .functionButton{
+        margin-left: 2%;
+    }
+  }
+}
+  
