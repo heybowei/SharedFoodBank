@@ -14,22 +14,47 @@
             </div>
 
             <div class="functionButton">
+                <a routerLink="/api/donate" routerLinkActive="mat-accent">
                 <button mat-raised-button>
                     Donate
                 </button>
+                </a>
             </div>
 
-            <div class="functionButton">
+            <div class="functionButton" *ngIf="!isAuthed">
+                <a routerLink="/auth/login" routerLinkActive="mat-accent">
                 <button mat-raised-button>
                     Login
                 </button>
+                </a>
             </div>
 
-            <div class="functionButton">
+            <div class="functionButton" *ngIf="!isAuthed">
+            <a routerLink="/auth/signup" routerLinkActive="mat-accent">
                 <button mat-raised-button>
-                    Signup
+                    Sign Up
+                </button>
+            </a>
+            </div>
+
+            <div class="functionButton" *ngIf="isAuthed">
+                <button mat-raised-button>
+                    Be supplier
                 </button>
             </div>
+
+            <div class="functionButton" *ngIf="isAuthed">
+                <button mat-raised-button>
+                    Search for Food
+                </button>
+            </div>
+
+            <div class="functionButton" *ngIf="isAuthed">
+                <button mat-raised-button>
+                    My Profile
+                </button>
+            </div>
+
         
         </mat-toolbar>
 
